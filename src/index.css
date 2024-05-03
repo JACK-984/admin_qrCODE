@@ -1,13 +1,299 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+    text-align: center;
+}
+
+#login-screen,
+#dashboard {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#login-screen input,
+#dashboard input[type="text"],
+#dashboard input[type="email"],
+#dashboard button {
+    margin-bottom: 10px;
+}
+
+#login-screen button,
+#dashboard button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-screen button:hover,
+#dashboard button:hover {
+    background-color: #45a049;
+}
+
+.user-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #005f7f;
+}
+
+.add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+
+
+
+/* new style */
+
+/* Existing CSS styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+#login-screen {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+#login-screen input,
+#login-screen button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#login-screen button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-screen button:hover {
+    background-color: #45a049;
+}
+
+#login-screen input[type="email"],
+#login-screen input[type="password"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+}
+
+#login-error {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    #login-screen {
+        max-width: 300px;
+    }
+}
+
+
+/* add second new style */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+#login-screen {
+    max-width: 400px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-screen input,
+#login-screen button {
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+#login-screen button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-screen button:hover {
+    background-color: #45a049;
+}
+
+#login-screen input[type="email"],
+#login-screen input[type="password"] {
+    padding: 10px;
+    width: calc(100% - 22px);
+}
+
+#login-error {
+    color: red;
+}
+
+@media only screen and (max-width: 600px) {
+    #login-screen {
+        max-width: 300px;
+    }
+}
+
+/* General styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Login screen styles */
+
+#login-screen {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-screen input[type="email"],
+#login-screen input[type="password"],
+#login-screen button {
+    margin-bottom: 10px;
+    width: calc(100% - 22px);
+    padding: 10px;
+}
+
+#login-screen button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#login-screen button:hover {
+    background-color: #45a049;
+}
+
+#login-error {
+    color: red;
+}
+
+/* User table styles */
+
+.user-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.user-table th,
+.user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.user-table th {
+    background-color: #f2f2f2;
+}
+
+.user-table tr:hover {
+    background-color: #f2f2f2;
+}
+
+/* Button styles */
+
+.edit-btn,
+.delete-btn,
+.add-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.edit-btn:hover,
+.delete-btn:hover,
+.add-btn:hover {
+    background-color: #45a049;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width: 600px) {
+    #login-screen {
+        max-width: 300px;
+    }
 }
